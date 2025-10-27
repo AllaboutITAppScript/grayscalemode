@@ -1,0 +1,144 @@
+  /* CSS สำหรับหน้าเว็บตัวอย่าง */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #e74c3c;
+            text-align: center;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 10px;
+        }
+        
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .color-box {
+            height: 80px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .red { background-color: #e74c3c; }
+        .green { background-color: #2ecc71; }
+        .blue { background-color: #3498db; }
+        .yellow { background-color: #f1c40f; color: #2c3e50; }
+        .purple { background-color: #9b59b6; }
+        .orange { background-color: #e67e22; }
+        .teal { background-color: #1abc9c; }
+        .pink { background-color: #e84393; }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .gallery-item {
+            height: 120px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .gallery-item:nth-child(1) { background-color: #e74c3c; }
+        .gallery-item:nth-child(2) { background-color: #2ecc71; }
+        .gallery-item:nth-child(3) { background-color: #3498db; }
+        .gallery-item:nth-child(4) { background-color: #f1c40f; }
+        .gallery-item:nth-child(5) { background-color: #9b59b6; }
+        .gallery-item:nth-child(6) { background-color: #1abc9c; }
+        
+        .controls {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #34495e;
+        }
+        
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .info-box h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .color-palette {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .image-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
